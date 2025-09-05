@@ -5,8 +5,9 @@ Realizado por Emily Pontes Fontana
 
 Resolução do **TDE 01** da disciplina **Resolução de Problemas Estruturados em Computação** da **PUCPR**.  
 
+**Estruturado dentro de uma pasta "src"**
 
-# Estruturado dentro de uma pasta "src"
+#Principais funções
 
 1. **Pilha (Lista Encadeada)**  
    -  **LIFO (Last In, First Out)**.
