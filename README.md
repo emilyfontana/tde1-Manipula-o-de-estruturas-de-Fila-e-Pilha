@@ -7,7 +7,7 @@ Resolução do **TDE 01** da disciplina **Resolução de Problemas Estruturados 
 
 **Estruturado dentro de uma pasta "src"**
 
-#Principais funções
+# Principais funções
 
 1. **Pilha (Lista Encadeada)**  
    -  **LIFO (Last In, First Out)**.
