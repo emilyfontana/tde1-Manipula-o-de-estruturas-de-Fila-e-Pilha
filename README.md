@@ -14,8 +14,8 @@ Resolução do **TDE 01** da disciplina **Resolução de Problemas Estruturados 
    -  User realiza inserção de elementos, elementos do topo são removidos assim que o user insere a quantidade que deseja retirar
 
 2. **Fila (Lista Encadeada)**    
-   -**FIFO (First In, First Out)**.
-   -User realiza inserção de elementos, elementos do inicio são removidos assim que o user insere a quantidade que deseja retirar 
+   - **FIFO (First In, First Out)**.
+   - User realiza inserção de elementos, elementos do inicio são removidos assim que o user insere a quantidade que deseja retirar 
 
 4. **Merge**  
    - Recebe duas filas **ordenadas** conforme o que se pede no trabalho e gera uma terceira fila ordenada com todos os elementos.  
