@@ -16,7 +16,7 @@ public class TDE01 {
 
             int opcao = lerNumero();
             
-            switch (opcao) {
+            switch (opcao) {   //opções disponiveis para o user
                 case 1: testarPilha(); break;
                 case 2: testarFila(); break;
                 case 3: testarMergeLista(); break;
@@ -34,12 +34,12 @@ public class TDE01 {
         PilhaLista pilha = new PilhaLista();
         
         System.out.print("Quantos elementos deseja inserir? ");
-        int qtd = lerNumero();
+        int qtd = lerNumero(); 
         
-        for (int i = 0; i < qtd; i++) {
+        for (int i = 0; i < qtd; i++) { //imprime de acordo com a qtd de elemntos
             System.out.print("Elemento " + (i + 1) + ": ");
             int valor = lerNumero();
-            pilha.insere(valor);
+            pilha.insere(valor); //insere valor indicado por user
         }
 
         System.out.println("\nPilha após inserção:");
@@ -69,7 +69,7 @@ public class TDE01 {
         
         for (int i = 0; i < qtd; i++) {
             System.out.print("Elemento " + (i + 1) + ": ");
-            int valor = lerNumero();
+            int valor = lerNumero(); //ocorre o mesmo com a fila
             fila.insere(valor);
         }
 
@@ -127,10 +127,10 @@ public class TDE01 {
         System.out.println("Fila C (merge):"); C.imprime();
     }
 
-    private static void inserirOrdenado(FilaLista fila) {
+    private static void inserirOrdenado(FilaLista fila) {  
         System.out.print("Quantos elementos? ");
         int qtd = lerNumero();
-        int anterior = Integer.MIN_VALUE;
+        int anterior = Integer.MIN_VALUE; //verifica se esta crescente
 
         for (int i = 0; i < qtd; i++) {
             System.out.print("Elemento " + (i + 1) + " : ");
