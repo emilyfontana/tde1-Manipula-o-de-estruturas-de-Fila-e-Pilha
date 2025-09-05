@@ -30,7 +30,7 @@ public class PilhaLista {
             throw new IllegalStateException("Pilha vazia!");
         }
         int valor = topo.info;
-        topo = topo.next;
+        topo = topo.next; //add prox numero
         tamanho--;
         return valor;
     }

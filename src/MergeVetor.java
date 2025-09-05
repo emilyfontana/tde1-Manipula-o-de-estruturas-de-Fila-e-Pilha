@@ -4,11 +4,11 @@ public class MergeVetor {
         int novaCapacidade = A.tamanho() + B.tamanho();
         FilaVetor C = new FilaVetor(novaCapacidade);
 
-        // Cria cópias para não modificar as originais
+        //aqui tambem cria copia 
         FilaVetor copiaA = copiarFila(A);
         FilaVetor copiaB = copiarFila(B);
 
-        // Merge de duas filas ORDENADAS
+        // ORDENADAS
         while (!copiaA.vazia() && !copiaB.vazia()) {
             if (copiaA.primeiro() <= copiaB.primeiro()) {
                 C.insere(copiaA.remove());
@@ -35,13 +35,13 @@ public class MergeVetor {
         FilaVetor copia = new FilaVetor(tamanhoOriginal);
         FilaVetor temp = new FilaVetor(tamanhoOriginal);
 
-        // Esvazia a original na temporária
+        
         while (!original.vazia()) {
             int valor = original.remove();
             temp.insere(valor);
         }
 
-        // Restaura a original e cria a cópia
+        
         while (!temp.vazia()) {
             int valor = temp.remove();
             original.insere(valor);

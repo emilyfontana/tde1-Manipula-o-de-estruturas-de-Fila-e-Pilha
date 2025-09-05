@@ -34,7 +34,7 @@ public class FilaLista {
 
     public int remove() {
         if (vazia()) {
-            throw new IllegalStateException("Fila vazia!");
+            System.out.println("Erro já esta vazia");
         }
         int valor = inicio.info;
         inicio = inicio.next;
@@ -47,7 +47,8 @@ public class FilaLista {
 
     public int primeiro() {
         if (vazia()) {
-            throw new IllegalStateException("Fila vazia!");
+            System.out.println("Fila vazia!");
+            
         }
         return inicio.info;
     }

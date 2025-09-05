@@ -7,7 +7,7 @@ public class MergeLista {
         FilaLista copiaA = copiarFila(A);
         FilaLista copiaB = copiarFila(B);
 
-        // Merge de duas filas ORDENADAS
+        //precisam ser ordenadas
         while (!copiaA.vazia() && !copiaB.vazia()) {
             if (copiaA.primeiro() <= copiaB.primeiro()) {
                 C.insere(copiaA.remove());
@@ -33,13 +33,13 @@ public class MergeLista {
         FilaLista copia = new FilaLista();
         FilaLista temp = new FilaLista();
 
-        // Esvazia a original na temporária
+        
         while (!original.vazia()) {
             int valor = original.remove();
             temp.insere(valor);
         }
 
-        // Restaura a original e cria a cópia
+        
         while (!temp.vazia()) {
             int valor = temp.remove();
             original.insere(valor);

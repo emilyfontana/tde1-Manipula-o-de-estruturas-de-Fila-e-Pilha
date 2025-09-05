@@ -16,7 +16,7 @@ public class FilaVetor {
 
     public void insere(int valor) {
         if (tamanho == capacidade) {
-            throw new IllegalStateException("Fila cheia!");
+            System.out.println("Fila Cheia!");
         }
         fim = (fim + 1) % capacidade;
         vetor[fim] = valor;
@@ -25,7 +25,7 @@ public class FilaVetor {
 
     public int remove() {
         if (vazia()) {
-            throw new IllegalStateException("Fila vazia!");
+            System.out.println("Fila vazia!");
         }
         int valor = vetor[inicio];
         inicio = (inicio + 1) % capacidade;
@@ -35,7 +35,7 @@ public class FilaVetor {
 
     public int primeiro() {
         if (vazia()) {
-            throw new IllegalStateException("Fila vazia!");
+            System.out.println("Fila vazia!");
         }
         return vetor[inicio];
     }
