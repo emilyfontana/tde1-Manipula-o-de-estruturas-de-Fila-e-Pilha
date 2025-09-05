@@ -7,6 +7,14 @@ Resolução do **TDE 01** da disciplina **Resolução de Problemas Estruturados 
 
 **Estruturado dentro de uma pasta "src"**
 
+ src/
+├── TDE01.java          # Classe principal com menu interativo
+├── PilhaLista.java     # Implementação de Pilha usando Lista Encadeada
+├── FilaLista.java      # Implementação de Fila usando Lista Encadeada  
+├── FilaVetor.java      # Implementação de Fila usando Vetor
+├── MergeLista.java     # Operação Merge com Lista Encadeada
+└── MergeVetor.java     # Operação Merge com Vetor
+
 # Principais funções
 
 1. **Pilha (Lista Encadeada)**  
